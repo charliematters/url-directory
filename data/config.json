@@ -1,0 +1,7 @@
+{
+    "port": 3000,
+    "sources": [
+        "./data/bbc.json",
+        "./data/google.json"
+    ]
+}

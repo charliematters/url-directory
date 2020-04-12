@@ -1,0 +1,22 @@
+body {
+    background-color: #f7f7f7;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+body.loading {
+    opacity:0;
+}
+
+.constrained {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.main.container {
+    background: white;
+    margin-top:4em;
+    padding: 2em;
+    border-radius:0.5em;
+}

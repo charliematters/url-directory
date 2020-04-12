@@ -1,0 +1,14 @@
+[
+    {
+        "shortcut": "bbc",
+        "url": "https://www.bbc.co.uk"
+    },
+    {
+        "shortcut": "bbc news",
+        "url": "https://www.bbc.co.uk/news"
+    },
+    {
+        "shortcut": "bbc america",
+        "url": "https://www.bbc.co.uk/news/world/us_and_canada"
+    }
+]

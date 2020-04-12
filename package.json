@@ -8,25 +8,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/classnames": "^2.2.10",
     "@types/express": "^4.17.6",
+    "@types/fuzzy-search": "^2.1.0",
     "@types/lodash": "^4.14.149",
     "@types/node": "^13.9.8",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
-    "@types/react-router-dom": "^5.1.4",
-    "@types/react-table": "^7.0.15",
+    "body-parser": "^1.19.0",
     "classnames": "^2.2.6",
     "express": "^4.17.1",
     "fomantic-ui-css": "^2.8.4",
-    "human-id": "^2.0.1",
+    "fuzzy-search": "^3.2.1",
+    "handlebars": "^4.7.6",
+    "is-url": "^1.2.4",
     "lodash": "^4.17.15",
-    "mobx": "5.15.4",
-    "mobx-react": "^6.1.8",
-    "node-sass": "^4.13.1",
+    "pm2": "^4.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-table": "^7.0.4",
     "semantic-ui-react": "^0.88.2",
     "typescript": "^3.8.3"
   },
@@ -38,7 +36,6 @@
     "@types/jest": "^25.2.1",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
-    "@welldone-software/why-did-you-render": "^4.0.7",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
@@ -52,18 +49,8 @@
   },
   "scripts": {
     "build": "node_modules/.bin/tsc",
-    "serve": "node build/index.js"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "serve": "node build/index.js",
+    "start": "node_modules/.bin/tsc && node_modules/.bin/pm2 start build/index.js --name url-directory",
+    "stop": "node_modules/.bin/pm2 stop url-directory"
   }
 }

@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{name}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="author" content="charliematters">
+    <link rel="stylesheet" href="semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="loading">
+    {{{component}}}
+</body>
+<script lang="javascript">
+    addEventListener("load", function () {
+        document.body.classList.remove("loading");
+    })
+</script>
+
+</html>

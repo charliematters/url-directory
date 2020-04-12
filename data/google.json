@@ -1,0 +1,11 @@
+[
+    {
+        "shortcut": "google",
+        "url": "https://www.google.co.uk"
+    },
+    {
+        "shortcut": "google (.*)",
+        "url": "https://www.google.co.uk/?q=$1",
+        "isRegex": true
+    }
+]
