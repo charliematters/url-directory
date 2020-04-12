@@ -1,9 +1,7 @@
 {
   "name": "directory",
   "engines": {
-    "npm": "6.13.4",
-    "node": "12.14.1",
-    "yarn": "1.22.4"
+    "node": "^10.20.1"
   },
   "version": "0.1.0",
   "private": true,
