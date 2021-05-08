@@ -17,7 +17,7 @@
     "express": "^4.17.1",
     "fomantic-ui-css": "^2.8.4",
     "fuzzy-search": "^3.2.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "is-url": "^1.2.4",
     "lodash": "^4.17.15",
     "pm2": "^4.2.3",
